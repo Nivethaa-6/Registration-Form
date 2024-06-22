@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registeration</title>
+    <link rel="stylesheet" href="registrate.css">
+    <script>
+        function myfunc(event)
+      {
+        var g1=document.querySelector('input[name="g"]:checked').value;
+        event.preventDefault();
+        var a=document.getElementById("name").value;
+        var b=document.getElementById("email").value;
+        var c=document.getElementById("user").value;
+        var d=document.getElementById("num").value;
+        var e=document.getElementById("gen").value;
+        document.write(`Name:${a}`);
+        document.write ("<br>");
+        document.write(`Email:${b}`);
+        document.write ("<br>");
+        document.write(`USername:${c}`);
+        document.write ("<br>");
+        document.write(`Number:${d}`);
+        document.write ("<br>");
+        document.write(`Gender:${g1}`);
+       
+
+      } 
+      
+    </script>
+</head>
+<body class="main" >
+    
+        <div class="form-box">
+            <div class="div2">
+                
+                    <div >
+                        <form>
+                        <h2 class="title">Registration</h2>
+                        <label for="">Full Name</label>
+                        <input type="email" placeholder="Enter your name" id="name"><br><br>
+                        <label for="">Email</label>
+                        <input type="email" placeholder="Enter your emailid" id="email"><br> <br>  
+                        <label for="">Password</label>
+                        <input type="email" placeholder="Enter your Password"><br> 
+                        
+                   
+                         </form>
+                    </div>
+                   <div >
+                    <form><br><br><br><br>
+                    <label for="">Username</label>
+                        <input type="text" placeholder="Enter your username" id="user"><br><br>
+                        <label for="">Mobile Number</label>
+                        <input type="tel" placeholder="Enter your mobile number" id="num"> <br> <br> 
+                        <label for="">Confirm Password</label>
+                        <input type="email" placeholder="Enter your Password"><br>
+                    </form>
+                   </div>
+                   
+                </div>
+                
+                <div><label>Gender</label><br><br>
+                
+                <input type="radio" id="gen" name="g"value="Male">Male
+                <input type="radio" id="gen"name="g"checked value="Female">Female
+                <input type="radio" id="gen"name="g"value="Prefer">Perfer not to say<br><br>
+                
+                
+            </div>
+                <button id="b" onclick="myfunc(event)">Register</button>
+            </div>
+
+        
+        
+</body>
+</html>
